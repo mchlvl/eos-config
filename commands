@@ -1,0 +1,18 @@
+# unervolt check
+systemctl status undervolt.service
+
+# gpu
+nvidia-settings
+prime-select query
+
+# lower brightness
+xrandr --output eDP-1 --brightness .3 --gamma 0.5:0.5:0.3
+xrandr --output eDP-1 --brightness .4 --gamma 0.5:0.3:0.1
+
+
+# fixfor full screen
+gsettings set org.pantheon.desktop.gala.behavior dynamic-workspaces false
+
+# list gestures
+cat ~/.config/fusuma/config.yml
+
